@@ -11,7 +11,7 @@
   --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Elegimos resetear márgenes y paddings básicos porque previene discrepancias de renderizado entre distintos navegadores */
+
 * {
   margin: 0;
   padding: 0;
@@ -209,7 +209,7 @@ main {
   padding-left: 1.5rem;
 }
 
-/* Elegimos un pseudo-elemento personalizado antes de cada elemento de lista porque agrega estilo sin cargar el HTML con viñetas genéricas */
+
 .intereses-lista li::before {
   content: "✔";
   position: absolute;
