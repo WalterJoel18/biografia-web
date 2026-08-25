@@ -10,30 +10,25 @@ Walter Gonzalez
 Jose Sanchez 
 Estructura del proyecto
 biografia-web/
-│
-├── index.html
-├── biografia1.html
-├── biografia2.html
-│
-├── css/
-│   └── estilos.css
-│
-└── img/
-    └── imágenes del proyecto
+index.html
+biografia1.html
+biografia2.html
+
+css/ stilos.css
+img/ imágenes del proyecto
+
 Tecnologías utilizadas
 HTML5
 CSS3
 GitHub
-GitHub Pages
 Características
-Página principal con presentación del equipo.
-Biografía individual de cada integrante.
-Menú de navegación entre las páginas.
-Uso de etiquetas semánticas de HTML5.
-Diseño y estilos mediante un archivo CSS externo.
-Imágenes relacionadas con los integrantes y sus intereses.
-Sitio publicado mediante GitHub Pages.
-Sitio web
+    Página principal con presentación del equipo.
+    Biografía individual de cada integrante.
+    Menú de navegación entre las páginas.
+    Uso de etiquetas semánticas de HTML5.
+    Diseño y estilos mediante un archivo CSS externo.
+    Sitio publicado mediante GitHub Pages.
+    Sitio web
 
 El proyecto se encuentra publicado mediante GitHub Pages:
 
