@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografía de José Sánchez</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <h1>Nuestra Biografía en la Web</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="biografia1.html">Biografía de Walter</a></li>
+          <li><a href="biografia2.html" class="activo">Biografía de José</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="bio-header">
+      <h2>José Sánchez</h2>
+      <p>Estudiante de Ingeniería de Software | 20 años</p>
+    </div>
+
+    <!-- Elegimos estructurar el contenido en una cuadrícula (grid) lateral porque separa de manera equilibrada el texto explicativo y las ilustraciones de pasatiempos -->
+    <div class="bio-grid">
+      
+      <div class="bio-contenido-principal">
+        
+        <section class="seccion-bio">
+          <h3>Presentación Personal</h3>
+          <p>Mi nombre es José Sánchez. Tengo 20 años y curso el tercer año de Ingeniería de Software en la Universidad Tecnológica de Panamá. Me apasiona resolver problemas lógicos y abstractos, lo que me llevó a inclinarme fuertemente por la programación de sistemas complejos y la optimización de servidores.</p>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Formación e Intereses Académicos</h3>
+          <ul class="intereses-lista">
+            <li><strong>Carrera:</strong> Ingeniería de Software (Universidad Tecnológica de Panamá).</li>
+            <li><strong>Áreas de interés:</strong> Desarrollo Back-End, administración de bases de datos relacionales e infraestructura en servidores.</li>
+            <li><strong>Tecnologías que me interesan:</strong> Python, sentencias SQL avanzadas, Node.js y contenedores virtuales con Docker.</li>
+            <li><strong>Temas por aprender:</strong> Modelos de aprendizaje automático (Inteligencia Artificial) y arquitectura en la nube (AWS/GCP).</li>
+          </ul>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Hobbies e Intereses Personales</h3>
+          <p>Cuando no estoy frente a la consola de comandos, dedico mi tiempo libre a explorar mis pasiones tecnológicas y artísticas:</p>
+          
+          <!-- Elegimos resaltar los hobbies con bloques individuales porque permite al lector distinguir cada área recreativa de forma independiente -->
+          <div class="hobbies-grid">
+            <div class="hobbie-item">Videojuegos (RPG y estrategia)</div>
+            <div class="hobbie-item">Hardware de PC y gadgets</div>
+            <div class="hobbie-item">Música e instrumentos</div>
+            <div class="hobbie-item">Cine e historia del cine</div>
+            <div class="hobbie-item">Series de ciencia ficción</div>
+          </div>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Metas Futuras</h3>
+          <p>Mis metas inmediatas consisten en aprobar las asignaturas del tercer año de carrera con excelentes calificaciones y emprender un proyecto personal de bases de datos. A largo plazo, aspiro a trabajar en el diseño y despliegue de infraestructuras backend de gran escala, contribuyendo al desarrollo de software robusto e inteligente.</p>
+        </section>
+
+      </div>
+
+      <!-- Elegimos agrupar las imágenes lateralmente en una sidebar porque equilibra la estructura visual entre texto y multimedia -->
+      <aside class="bio-sidebar">
+        
+        <article class="tarjeta-imagen">
+          <img src="img/jose_gaming.jpg" alt="Ilustración de control de videojuegos y monitor de código en tonos verdes">
+          <p>Videojuegos y desarrollo: dos mundos que comparten la pasión por resolver desafíos lógicos.</p>
+        </article>
+
+        <article class="tarjeta-imagen">
+          <img src="img/jose_media.jpg" alt="Ilustración de claqueta de cine y notas musicales en tonos verde acua">
+          <p>Música y cine: expresiones artísticas que complementan mi afición por la tecnología y la ciencia ficción.</p>
+        </article>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Walter Gonzalez & José Sánchez. Ingeniería Web - Universidad Tecnológica de Panamá.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

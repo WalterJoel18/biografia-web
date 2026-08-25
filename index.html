@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Biografía en la Web - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Elegimos utilizar HTML semántico porque mejora la accesibilidad y la legibilidad de la estructura del sitio -->
+  <header>
+    <div class="contenedor">
+      <h1>Nuestra Biografía en la Web</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="biografia1.html">Biografía de Walter</a></li>
+          <li><a href="biografia2.html">Biografía de José</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="hero">
+      <h2>Bienvenidos a nuestro sitio web</h2>
+      <p>Somos estudiantes de tercer año de la carrera de Ingeniería de Software en la Universidad Tecnológica de Panamá. Este espacio digital ha sido desarrollado como parte del Laboratorio N.º 1 de Ingeniería Web, con el objetivo de compartir un poco sobre nuestras vidas, intereses académicos y pasatiempos favoritos.</p>
+    </section>
+
+    <!-- Elegimos una sección con tarjetas porque organiza la información de cada integrante de forma simétrica y atractiva -->
+    <section>
+      <div class="tarjetas-integrantes">
+        
+        <article class="tarjeta">
+          <h3>Walter González</h3>
+          <p class="info-carrera">Estudiante de Ingeniería de Software (3ra Año)</p>
+          <p>Tiene 20 años y le apasiona el desarrollo de interfaces y el diseño web. Entre sus pasatiempos destacan la cocina experimental, el cine y disfrutar de buenas series de anime.</p>
+          <a href="biografia1.html" class="btn-ver-mas">Ver Biografía Completa</a>
+        </article>
+
+        <article class="tarjeta">
+          <h3>José Sánchez</h3>
+          <p class="info-carrera">Estudiante de Ingeniería de Software (3ra Año)</p>
+          <p>Tiene 20 años y se inclina por el desarrollo backend y la arquitectura de sistemas. Sus principales intereses son la tecnología, los videojuegos y la producción audiovisual (cine y música).</p>
+          <a href="biografia2.html" class="btn-ver-mas">Ver Biografía Completa</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Walter Gonzalez & José Sánchez. Ingeniería Web - Universidad Tecnológica de Panamá.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

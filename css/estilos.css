@@ -1,0 +1,279 @@
+/* Elegimos variables CSS para la paleta de colores porque facilita mantener la consistencia del diseño verde y acua en todas las páginas */
+:root {
+  --color-principal: #00695c;
+  --color-secundario: #00897b;
+  --color-acento: #26a69a;
+  --color-fondo-primario: #f4fbf7;
+  --color-fondo-secundario: #e0f2f1;
+  --color-texto: #263238;
+  --color-blanco: #ffffff;
+  --color-borde: #b2dfdb;
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Elegimos resetear márgenes y paddings básicos porque previene discrepancias de renderizado entre distintos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo-primario);
+  color: var(--color-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Elegimos un contenedor centralizado con max-width porque mejora la legibilidad en pantallas ultra anchas */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header y Navegación */
+header {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Elegimos una navegación horizontal semántica porque simplifica el recorrido del usuario por las tres secciones principales */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Elegimos un efecto hover para los enlaces del menú porque da feedback visual inmediato al usuario sobre qué enlace está activo */
+nav a:hover, nav a.activo {
+  background-color: var(--color-secundario);
+}
+
+/* Área Principal */
+main {
+  flex: 1;
+  padding: 2.5rem 0;
+}
+
+/* Estilos de la Página de Inicio (index.html) */
+.hero {
+  text-align: center;
+  background-color: var(--color-fondo-secundario);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  margin-bottom: 3rem;
+}
+
+.hero h2 {
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Elegimos un sistema de Grid para las tarjetas de presentación porque distribuye a los dos integrantes simétricamente */
+.tarjetas-integrantes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta {
+  background-color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Elegimos añadir transición transform en hover porque hace que las tarjetas se sientan más interactivas */
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 105, 92, 0.15);
+}
+
+.tarjeta h3 {
+  color: var(--color-principal);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta .info-carrera {
+  font-weight: 600;
+  color: var(--color-secundario);
+  margin-bottom: 1rem;
+}
+
+.tarjeta p {
+  margin-bottom: 1.5rem;
+}
+
+/* Elegimos un botón con fondo verde acua para los llamados a la acción porque resalta visualmente contra el texto */
+.btn-ver-mas {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background-color: var(--color-principal);
+}
+
+/* Estilos de las Biografías (biografia1.html y biografia2.html) */
+.bio-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.bio-header h2 {
+  color: var(--color-principal);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  /* Elegimos cambiar a una sola columna en pantallas medianas porque los textos e imágenes se amontonarían */
+  .bio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.seccion-bio {
+  background-color: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.seccion-bio h3 {
+  color: var(--color-principal);
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.intereses-lista {
+  list-style-type: none;
+}
+
+.intereses-lista li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Elegimos un pseudo-elemento personalizado antes de cada elemento de lista porque agrega estilo sin cargar el HTML con viñetas genéricas */
+.intereses-lista li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hobbie-item {
+  background-color: var(--color-fondo-primario);
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--color-acento);
+  font-weight: 500;
+}
+
+/* Elegimos agrupar las imágenes lateralmente en una sidebar porque equilibra la estructura visual entre texto y multimedia */
+.bio-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tarjeta-imagen {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-imagen img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta-imagen p {
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-texto);
+  background-color: var(--color-fondo-secundario);
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  border-top: 4px solid var(--color-secundario);
+}
+
+footer p {
+  font-size: 0.95rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografía de Walter González</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <h1>Nuestra Biografía en la Web</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="biografia1.html" class="activo">Biografía de Walter</a></li>
+          <li><a href="biografia2.html">Biografía de José</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="bio-header">
+      <h2>Walter Gonzalez</h2>
+      <p>Estudiante de Ingeniería de Software | 20 años</p>
+    </div>
+
+    <!-- Elegimos estructurar el contenido en una cuadrícula (grid) lateral porque separa limpiamente la lectura textual de las ilustraciones visuales -->
+    <div class="bio-grid">
+      
+      <div class="bio-contenido-principal">
+        
+        <section class="seccion-bio">
+          <h3>Presentación Personal</h3>
+          <p>Mi nombre es Walter González, tengo 20 años y actualmente curso el tercer año de la carrera de Ingeniería de Software en la Universidad Tecnológica de Panamá. Me considero una persona creativa, curiosa y siempre dispuesta a aprender nuevas metodologías y herramientas para mejorar en mi desarrollo profesional y técnico.</p>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Formación e Intereses Académicos</h3>
+          <ul class="intereses-lista">
+            <li><strong>Carrera:</strong> Ingeniería de Software (Universidad Tecnológica de Panamá).</li>
+            <li><strong>Áreas de interés:</strong> Devops, desarrollo Front-End, diseño de interfaces de usuario (UX/UI) y optimización del rendimiento web.</li>
+            <li><strong>Tecnologías que me interesan:</strong> HTML5, CSS3, JavaScript, frameworks modernos de frontend (como React y Svelte) y preprocesadores CSS.</li>
+            <li><strong>Temas por aprender:</strong> Desarrollo de aplicaciones móviles multiplataforma y despliegue automatizado (CI/CD).</li>
+          </ul>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Hobbies e Intereses Personales</h3>
+          <p>Fuera de las aulas de clase y la programación, disfruto enormemente dedicar mi tiempo libre a diversas actividades que estimulan mi creatividad y me ayudan a relajarme:</p>
+          
+          <!-- Elegimos usar listas personalizadas para los hobbies porque facilitan la lectura rápida de los pasatiempos -->
+          <div class="hobbies-grid">
+            <div class="hobbie-item">Cocinar y ensayar recetas</div>
+            <div class="hobbie-item">Cine e historia del cine</div>
+            <div class="hobbie-item">Anime (shonen y misterio)</div>
+            <div class="hobbie-item">Música variada y soundtracks</div>
+            <div class="hobbie-item">Comer y probar nuevos platos</div>
+          </div>
+        </section>
+
+        <section class="seccion-bio">
+          <h3>Metas Futuras</h3>
+          <p>A corto plazo, mi principal meta es culminar de manera sobresaliente mi tercer año universitario. Posteriormente, aspiro a ingresar al mercado laboral mediante una pasantía que me permita especializarme en desarrollo frontend y, eventualmente, liderar proyectos enfocados en crear experiencias de usuario excepcionales y accesibles.</p>
+        </section>
+
+      </div>
+
+      <!-- Elegimos agrupar las imágenes lateralmente en unasidebar porque equilibra la estructura visual entre texto y multimedia -->
+      <aside class="bio-sidebar">
+        
+        <article class="tarjeta-imagen">
+          <img src="img/walter_cooking.jpg" alt="Ilustración que representa el interés de Walter en la cocina en tonos verde acua">
+          <p>La cocina: una combinación perfecta de arte, ciencia y experimentación de sabores.</p>
+        </article>
+
+        <article class="tarjeta-imagen">
+          <img src="img/walter_music.jpg" alt="Ilustración que combina auriculares, cine y comida en tonos verdes">
+          <p>Música, cine y buena comida: mis acompañantes perfectos para desconectar del código.</p>
+        </article>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Walter Gonzalez & José Sánchez. Ingeniería Web - Universidad Tecnológica de Panamá.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
